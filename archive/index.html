@@ -5,16 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LISTA</title>
+        <style>
+            body {
+                margin: 2rem 0 0 1rem;
+            }
+            em {
+                color: brown;
+            }
+        </style>
     </head>
     <body>
-        <h1>lista de arquivos:</h1>
+        <h3>
+            Para buscar um arquivo, digite:<br />
+            <em>localhost:4002/nomeDoArquivo.extensao</em>
+        </h3>
+        <span>Ex.: localhost:4002/aluno.json</span>
+        <h3>
+            Para criar arquivos, acesse: <a href="/criar.html">criar.html</a>
+        </h3>
+
+        <h3>lista de arquivos:</h3>
         <ul>
-            <li>Criar arquivos: <a href="/criar.html">criar.html</a></li>
-            <li>Para buscar um arquivo, digite localhost:4002/nomeDoArquivo :</li>
-            <li> aluno.jpg</li>
-            <li> aluno.json</li>
-            <li> trainee.pdf</li>
-            <span>exemplo: localhost:4002/aluno.json</span>
+            <li>aluno.jpg</li>
+            <li>aluno.json</li>
+            <li>trainee.pdf</li>
         </ul>
     </body>
 </html>
