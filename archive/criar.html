@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/179/179452.png" />
+        <title>Criar Arquivos</title>
         <style>
             body {
                 text-align: center;
@@ -12,28 +13,32 @@
         </style>
     </head>
     <body>
-            <h1>Lab-Calindra:</h1>
-            <form action="/post" method="post">
-                <br />
-                <input
-                    type="text"
-                    required
-                    placeholder="Nome do arquivo"
-                    name="arquivo"
-                />
-                <br /><br />
-                <select name="tipo">
-                    <option value="" disabled selected>---</option>
-                    <option value="txt">Arquivo TXT</option>
-                    <option value="html">Arquivo HTML</option>
-                </select>
-                <br /><br />
-                <textarea
-                    rows="3"
-                    placeholder="Digite o corpo do arquivo"
-                ></textarea>
-                <br /><br />
-                <input type="submit" value="Procurar" />
-            </form>
+        <h3><a href="/">Home</a></h3>
+        <h1>Lab-Calindra:</h1>
+        <form action="/post" method="post">
+            <br />
+            <input
+                type="text"
+                required
+                placeholder="Nome do arquivo"
+                name="arquivo"
+            />
+            <br /><br />
+            <input name="tipo" for="txt" type="radio" value="txt" />
+            <label for="txt">.txt</label>
+            <input name="tipo" for="html" type="radio" value="html" />
+            <label for="html">.html</label>
+            <input name="tipo" for="json" type="radio" value="json" />
+            <label for="json">.json</label>
+            <br /><br />
+            <textarea
+                cols="20"
+                rows="3"
+                name="conteudo"
+                placeholder="Digite o corpo do arquivo"
+            ></textarea>
+            <br />
+            <input type="submit" value="Criar arquivo" />
+        </form>
     </body>
 </html>
